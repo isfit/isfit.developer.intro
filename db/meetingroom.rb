@@ -19,7 +19,7 @@ class Meetingroom
         name = r["name"]
         size = r["size"]
 
-        return Meetingroom.new id, name, size
+        return self.new id, name, size
       end
     else
       raise "Not Found"
