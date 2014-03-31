@@ -1,13 +1,13 @@
 require_relative 'meetingroom'
 
 def main
-	all_test
-	find_test
-	find_not_found_test
+  all_test
+  find_test
+  find_not_found_test
 end
 
 def all_test
-	puts "All:\n"
+  puts "All:\n"
   puts Meetingroom.all_string
 end
 
@@ -17,12 +17,12 @@ def find_test
 end
 
 def find_not_found_test
-	begin
+  begin
     Meetingroom.find(42)
-	rescue RuntimeError => e
-		puts "\n\nDid not find 42"
-		puts e
-	end
+  rescue RuntimeError => e
+    puts "\n\nDid not find 42"
+    puts e
+  end
 end
 
 main
