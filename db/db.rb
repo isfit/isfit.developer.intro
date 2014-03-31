@@ -15,4 +15,3 @@ class DB
     @client.query statement
   end
 end
-
